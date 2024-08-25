@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Sora&family=Varela+Round&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("assets/back.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#head {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    top: 15px; 
+    left: 15px;
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    color: rgb(63, 63, 63);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: rgb(54, 54, 54);
+   
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Sora', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+    display: block;
+}
+
+ul li a:hover {
+    color: rgb(54, 54, 54);
+}
+
+span {
+    text-decoration: underline;
+    padding: 10px 20px;
+    border-radius: 99px;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(#c8fcfc,#083c7c);
+    border-radius: 10px;
+    box-shadow: none;
+    opacity: 80%;
+        
+}
+h3{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 20vw; /* Fixed width */
+    height: 80px; /* Fixed height */
+    background-color:aliceblue;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, width 0.3s ease, height 0.3s ease;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    cursor: pointer;
+    opacity: 100%;
+    overflow:hidden;
+}
+
+.file-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.file-item:active {
+    width: 100%; /* Increase size when clicked */
+    height: 100%; /* Increase size when clicked */
+}
+
+.file-name {
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate text with ellipsis */
+    max-width: 120px; /* Limit the width of the text container */
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #00cc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Adjust icon size */
+}
+
+.download-btn:hover {
+    background-color: #009900;
+}
+
+/* Add this if using FontAwesome */
+.file-item .fa-download {
+    margin-right: 8px; /* Space between icon and text */
+}
+.file_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Adjust icon size */
+
+
+}
